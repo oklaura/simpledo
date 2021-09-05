@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(241, 241, 241);
+  font-family: acumin-pro, sans-serif;
+  font-weight: 300;
+  font-style: 10px;
+}
+
+header,
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  padding-top: 40px;
+  font-family: acumin-pro, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+form {
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+
+form input,
+.filter-list {
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 0.5px;
+  margin: 0px;
+}
+
+form input:focus {
+  all: unset;
+  border-bottom: solid 0.5px;
+}
+
+.input,
+form input:focus {
+  font-family: acumin-pro, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  padding: 2px 5px;
+}
+
+.add-button {
+  all: unset;
+  /* position: absolute; */
+  margin-right: 45px;
+}
+
+.filter-list {
+  width: 14ch;
+  border: solid 0.5px;
+  border-radius: 10px;
+  padding: 3px 4px;
+  font-size: 12px;
+}
+
+.filter-list:after {
+  background: green;
+}
+
+.todo-list-container {
+  display: flex;
+  justify-content: center;
+}
+
+.ul-list-of-items {
+}
+
+.item-div {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+  padding-top: 20px;
+  padding-bottom: 3px;
+  border-bottom: solid 0.5px;
+  font-size: 14px;
+  align-items: center;
+}
+
+.todo-item {
+  list-style: none;
+  flex: 1;
+  padding-left: 10px;
+}
+
+.item-completed {
+  opacity: 0.65;
+}
+
+.item-completed li {
+  text-decoration: line-through;
+}
+
+.trash-button {
+  all: unset;
+  cursor: pointer;
+  font-family: acumin-pro, sans-serif;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 14px;
+}
